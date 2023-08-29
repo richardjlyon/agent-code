@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "agent-code"
+version = "0.1.0"
+description = ""
+authors = ["Richard Lyon <richlyon@fastmail.com>"]
+readme = "README.md"
+packages = [{include = "agent_code"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+docopt = "^0.6.2"
+
+[tool.poetry.scripts]
+make_uid = 'agent_code.agent_uid:make_uid'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
